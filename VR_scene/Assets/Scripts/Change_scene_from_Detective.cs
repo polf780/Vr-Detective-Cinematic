@@ -17,8 +17,7 @@ public class Change_scene_from_Detective : MonoBehaviour
         
     }
     public void changemap()
-    {
-        //SceneManager.LoadScene("Escena Asesinato con Tren");
+    {     
         SceneManager.LoadScene("Escena Asesinato con Tren");
     }
 }

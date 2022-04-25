@@ -19,7 +19,6 @@ public class Changescenefrommenu : MonoBehaviour
 
     public void changemap()
     {
-        //SceneManager.LoadScene("Escena Asesinato con Tren");
         SceneManager.LoadScene("Escena Detective");
     }
 }
