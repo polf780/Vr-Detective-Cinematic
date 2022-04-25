@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Changescenefrommenu : MonoBehaviour
 {
@@ -14,5 +15,11 @@ public class Changescenefrommenu : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void changemap()
+    {
+        //SceneManager.LoadScene("Escena Asesinato con Tren");
+        SceneManager.LoadScene("Escena Detective");
     }
 }
