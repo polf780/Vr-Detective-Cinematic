@@ -4,27 +4,36 @@ using UnityEngine;
 
 public class Grabing_phone : MonoBehaviour
 {
-    public bool Started_timeline = false;
+    private bool picked_phone = false;
+    private float time = 0.0f;
+    public float interpolationPeriod = 5f;
+    public AudioSource phoneringing;
+    public GameObject phone;
     // Start is called before the first frame update
     void Start()
     {
-        Started_timeline = false;
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void StartTimeLine()
-    {
-        if (Started_timeline == false)
+        if (picked_phone == false)
         {
-            //This space is for the code to start the first timeline
-            Debug.Log("Starting timeline ");
-            Started_timeline = true;
+            time += Time.deltaTime;
+           
+            if (time >= interpolationPeriod)
+            {
+                Debug.Log("new audio and animation");
+                phone.GetComponent<Animator>().Play("Idle_phone");
+                phoneringing.Play();
+                time = 0.0f;
+            }
         }
-      
+    }
+    public void Stopaudioandanimation()
+    {
+        picked_phone = true;
+        phone.GetComponent<Animator>().enabled = false;
     }
 }
