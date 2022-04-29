@@ -23,8 +23,7 @@ public class Grabing_phone : MonoBehaviour
             time += Time.deltaTime;
            
             if (time >= interpolationPeriod)
-            {
-                Debug.Log("new audio and animation");
+            {             
                 phone.GetComponent<Animator>().Play("Idle_phone");
                 phoneringing.Play();
                 time = 0.0f;
