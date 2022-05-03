@@ -16,11 +16,7 @@ public class Start_New_timeline : MonoBehaviour
     }
     void Update()
     {
-        if(cube.activeInHierarchy == true)
-        {
-            Robotidle.GetComponent<Animator>().Play("Take 001");
-            // if we want to play nothing Robotidle.GetComponent<Animator>().Play("New State");
-        }
+    
     }
 
     public void Play()
@@ -30,5 +26,10 @@ public class Start_New_timeline : MonoBehaviour
             playableDirector2.Play();
             Started_timeline = true;
         }
+    }
+
+    public void Start_idlerobot_animation()
+    {
+        Robotidle.GetComponent<Animator>().Play("Take 001");
     }
 }
