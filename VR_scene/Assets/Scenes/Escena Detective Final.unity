@@ -5412,10 +5412,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1788961439}
+        m_TargetAssemblyTypeName: Lightning_selecting_suspects, Assembly-CSharp
+        m_MethodName: Armor_light_Enable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1788961439}
+        m_TargetAssemblyTypeName: Lightning_selecting_suspects, Assembly-CSharp
+        m_MethodName: Armor_light_Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -11121,10 +11145,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1788961439}
+        m_TargetAssemblyTypeName: Lightning_selecting_suspects, Assembly-CSharp
+        m_MethodName: Faun_light_Enable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1788961439}
+        m_TargetAssemblyTypeName: Lightning_selecting_suspects, Assembly-CSharp
+        m_MethodName: Faun_light_Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -11559,6 +11607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1788961436}
   - component: {fileID: 1788961435}
+  - component: {fileID: 1788961439}
   - component: {fileID: 1788961437}
   - component: {fileID: 1788961438}
   m_Layer: 0
@@ -11648,6 +11697,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1788961439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788961434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f63ce9186871a4fbf6b7b05c3033ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Murloc_Light: {fileID: 1316446760}
+  Faun_Light: {fileID: 1991154011}
+  Armor_Light: {fileID: 1920889705}
 --- !u!1 &1820330344
 GameObject:
   m_ObjectHideFlags: 0
@@ -12631,7 +12695,7 @@ GameObject:
   - component: {fileID: 1991154013}
   - component: {fileID: 1991154012}
   m_Layer: 0
-  m_Name: Spot Light (1)
+  m_Name: Spot Light Faun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12805,10 +12869,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1788961439}
+        m_TargetAssemblyTypeName: Lightning_selecting_suspects, Assembly-CSharp
+        m_MethodName: Enable_light_Murloc
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1788961439}
+        m_TargetAssemblyTypeName: Lightning_selecting_suspects, Assembly-CSharp
+        m_MethodName: Close_light_Murloc
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
