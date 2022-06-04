@@ -5,6 +5,7 @@ using UnityEngine.Playables;
 public class Start_New_timeline : MonoBehaviour
 {
     public PlayableDirector playableDirector2;
+    public PlayableDirector playabledirector_salir_idle;
     public GameObject button;
     // Start is called before the first frame update
     public bool Started_timeline = false;
@@ -20,8 +21,10 @@ public class Start_New_timeline : MonoBehaviour
 
     public void Play()
     {
+        
         if (Started_timeline == false)
         {
+            playabledirector_salir_idle.Stop();
             playableDirector2.Play();
             Started_timeline = true;
         }
