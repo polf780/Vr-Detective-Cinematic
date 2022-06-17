@@ -5964,7 +5964,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -6012,7 +6012,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169407384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.523207, y: 2.1986046, z: -3.023806}
+  m_LocalPosition: {x: -4.716, y: 1.111, z: 2.806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6094,27 +6094,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a494f7487473cf47b881d9fadfa4384, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.75
+      value: -1.876
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a494f7487473cf47b881d9fadfa4384, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.037999988
+      value: 0.069
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a494f7487473cf47b881d9fadfa4384, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.67
+      value: 2.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a494f7487473cf47b881d9fadfa4384, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.998515
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a494f7487473cf47b881d9fadfa4384, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a494f7487473cf47b881d9fadfa4384, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.054477468
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a494f7487473cf47b881d9fadfa4384, type: 3}
       propertyPath: m_LocalRotation.z
@@ -6126,7 +6126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a494f7487473cf47b881d9fadfa4384, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 353.754
+      value: 360
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a494f7487473cf47b881d9fadfa4384, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -8832,6 +8832,8 @@ PlayableDirector:
     value: {fileID: 1169407385}
   - key: {fileID: 5358265511248459799, guid: 7137f69822b9d8f49ae486307c2b4155, type: 2}
     value: {fileID: 441691533}
+  - key: {fileID: -4064641165053102358, guid: 7137f69822b9d8f49ae486307c2b4155, type: 2}
+    value: {fileID: 706135258}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1967393538
