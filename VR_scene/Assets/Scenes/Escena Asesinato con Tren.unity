@@ -3017,7 +3017,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2.79
   m_Range: 10
-  m_SpotAngle: 123
+  m_SpotAngle: 142.8
   m_InnerSpotAngle: 5
   m_CookieSize: 10
   m_Shadows:
@@ -6048,15 +6048,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc9caa064292ee541893de9ae3927e94, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc9caa064292ee541893de9ae3927e94, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc9caa064292ee541893de9ae3927e94, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc9caa064292ee541893de9ae3927e94, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8788,6 +8788,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 59aa2991eca66b443b035f6595e5a3ad, type: 3}
   m_PrefabInstance: {fileID: 1915747757}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1960840260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bc9caa064292ee541893de9ae3927e94, type: 3}
+  m_PrefabInstance: {fileID: 1171691170}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1960840263
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960840260}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1967393536
 GameObject:
   m_ObjectHideFlags: 0
@@ -8834,6 +8859,8 @@ PlayableDirector:
     value: {fileID: 441691533}
   - key: {fileID: -4064641165053102358, guid: 7137f69822b9d8f49ae486307c2b4155, type: 2}
     value: {fileID: 706135258}
+  - key: {fileID: -3664081097794274802, guid: 7137f69822b9d8f49ae486307c2b4155, type: 2}
+    value: {fileID: 1960840263}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1967393538
