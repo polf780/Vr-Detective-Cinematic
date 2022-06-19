@@ -5698,6 +5698,7 @@ GameObject:
   - component: {fileID: 648595796}
   - component: {fileID: 648595795}
   - component: {fileID: 648595797}
+  - component: {fileID: 648595798}
   m_Layer: 0
   m_Name: Audio source
   m_TagString: Untagged
@@ -5829,6 +5830,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Director_idle_robot: {fileID: 206809544}
+--- !u!95 &648595798
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648595794}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &672292664 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 91e2dcc5091a20b4b8c6d866e0e0df16, type: 3}
@@ -7336,6 +7357,10 @@ PlayableDirector:
     value: {fileID: 834448931}
   - key: {fileID: -2228954767558780807, guid: f87a6cccde7ae7443a757768296e6c7c, type: 2}
     value: {fileID: 105857526}
+  - key: {fileID: -7885841646403666272, guid: f87a6cccde7ae7443a757768296e6c7c, type: 2}
+    value: {fileID: 648595798}
+  - key: {fileID: 8023270232258199832, guid: f87a6cccde7ae7443a757768296e6c7c, type: 2}
+    value: {fileID: 1362667593}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &947292163
@@ -12737,6 +12762,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1362667593
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362667591}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1367709593
 GameObject:
   m_ObjectHideFlags: 0
