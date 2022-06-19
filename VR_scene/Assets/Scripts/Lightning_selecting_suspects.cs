@@ -7,6 +7,7 @@ public class Lightning_selecting_suspects : MonoBehaviour
     public GameObject Murloc_Light;
     public GameObject Faun_Light;
     public GameObject Armor_Light;
+    public GameObject Detective_Light;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,5 +44,14 @@ public class Lightning_selecting_suspects : MonoBehaviour
     public void Armor_light_Close()
     {
         Armor_Light.SetActive(false);
+    }
+
+    public void Detective_Light_Enable()
+    {
+        Detective_Light.SetActive(true);
+    }
+    public void Detective_Light_Close()
+    {
+        Detective_Light.SetActive(false);
     }
 }
