@@ -4249,6 +4249,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389862398}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &398093502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 398093504}
+  - component: {fileID: 398093503}
+  m_Layer: 0
+  m_Name: BoxColliders_Off
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &398093503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398093502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9cadf51c7369744902ffbe7a9bf7cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Faun: {fileID: 1591439182}
+  Robot: {fileID: 2089560663}
+  Murloc: {fileID: 1021372749}
+  Armadura: {fileID: 422098147}
+--- !u!4 &398093504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398093502}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5863931, y: 0.89180744, z: 0.6575379}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &422098146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4525,7 +4573,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -4882,6 +4930,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 690dae9870b052346b4291ce154f2cc2, type: 2}
     - {fileID: 11400000, guid: d9163d3b97a2e104a9a7e50b0fee4f8c, type: 2}
     - {fileID: 11400000, guid: 4e9082a35c61e7f41960cf996cbb6ee2, type: 2}
+    - {fileID: 11400000, guid: dee4d03fa11d3d54eb7d5684b83d1fc4, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -4916,6 +4965,20 @@ MonoBehaviour:
         - m_Target: {fileID: 547906839}
           m_TargetAssemblyTypeName: FadeScreen, Assembly-CSharp
           m_MethodName: FadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 398093503}
+          m_TargetAssemblyTypeName: Desactivar_box_collider, Assembly-CSharp
+          m_MethodName: TurnOff_All_Colliders
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5969,6 +6032,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 690dae9870b052346b4291ce154f2cc2, type: 2}
     - {fileID: 11400000, guid: d9163d3b97a2e104a9a7e50b0fee4f8c, type: 2}
     - {fileID: 11400000, guid: 4e9082a35c61e7f41960cf996cbb6ee2, type: 2}
+    - {fileID: 11400000, guid: dee4d03fa11d3d54eb7d5684b83d1fc4, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -6003,6 +6067,20 @@ MonoBehaviour:
         - m_Target: {fileID: 547906839}
           m_TargetAssemblyTypeName: FadeScreen, Assembly-CSharp
           m_MethodName: FadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 398093503}
+          m_TargetAssemblyTypeName: Desactivar_box_collider, Assembly-CSharp
+          m_MethodName: TurnOff_All_Colliders
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -16481,6 +16559,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 690dae9870b052346b4291ce154f2cc2, type: 2}
     - {fileID: 11400000, guid: d9163d3b97a2e104a9a7e50b0fee4f8c, type: 2}
     - {fileID: 11400000, guid: 4e9082a35c61e7f41960cf996cbb6ee2, type: 2}
+    - {fileID: 11400000, guid: dee4d03fa11d3d54eb7d5684b83d1fc4, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -16515,6 +16594,20 @@ MonoBehaviour:
         - m_Target: {fileID: 547906839}
           m_TargetAssemblyTypeName: FadeScreen, Assembly-CSharp
           m_MethodName: FadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 398093503}
+          m_TargetAssemblyTypeName: Desactivar_box_collider, Assembly-CSharp
+          m_MethodName: TurnOff_All_Colliders
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -16719,8 +16812,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2, y: 1.74, z: 0.98}
-  m_Center: {x: -0.7, y: 0.88, z: 1.6}
+  m_Size: {x: 0.5200758, y: 1.74, z: 0.6902647}
+  m_Center: {x: -0.56678325, y: 0.88, z: 1.9759679}
 --- !u!114 &2089560669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16904,6 +16997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2113524330}
   - component: {fileID: 2113524331}
+  - component: {fileID: 2113524332}
   m_Layer: 0
   m_Name: Time_Line_5_Opcion_Robot
   m_TagString: Untagged
@@ -16945,6 +17039,81 @@ PlayableDirector:
     value: {fileID: 320988351}
   m_ExposedReferences:
     m_References: []
+--- !u!114 &2113524332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113524329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: dee4d03fa11d3d54eb7d5684b83d1fc4, type: 2}
+    - {fileID: 11400000, guid: d9163d3b97a2e104a9a7e50b0fee4f8c, type: 2}
+    - {fileID: 11400000, guid: 4e9082a35c61e7f41960cf996cbb6ee2, type: 2}
+    - {fileID: 11400000, guid: 690dae9870b052346b4291ce154f2cc2, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 398093503}
+          m_TargetAssemblyTypeName: Desactivar_box_collider, Assembly-CSharp
+          m_MethodName: TurnOff_All_Colliders
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 547906839}
+          m_TargetAssemblyTypeName: FadeScreen, Assembly-CSharp
+          m_MethodName: FadeOut
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 547906839}
+          m_TargetAssemblyTypeName: FadeScreen, Assembly-CSharp
+          m_MethodName: FadeIn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 572233150}
+          m_TargetAssemblyTypeName: Change_scene_from_Detective_to_Menu, Assembly-CSharp
+          m_MethodName: changemap
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &2123035091
 PrefabInstance:
   m_ObjectHideFlags: 0
