@@ -4544,15 +4544,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ac4aea12fdd59f499a0409853dae023, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
+      value: 281
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ac4aea12fdd59f499a0409853dae023, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 319
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ac4aea12fdd59f499a0409853dae023, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 172.303
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4ac4aea12fdd59f499a0409853dae023, type: 3}
       propertyPath: m_Name
@@ -7361,6 +7361,8 @@ PlayableDirector:
     value: {fileID: 648595798}
   - key: {fileID: 8023270232258199832, guid: f87a6cccde7ae7443a757768296e6c7c, type: 2}
     value: {fileID: 1362667593}
+  - key: {fileID: 0}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &947292163
