@@ -1297,7 +1297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6d10f0240e4729148afb95462eaada6f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -5
+      value: 359
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6d10f0240e4729148afb95462eaada6f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -9584,6 +9584,7 @@ GameObject:
   - component: {fileID: 1053301364}
   - component: {fileID: 1053301367}
   - component: {fileID: 1053301366}
+  - component: {fileID: 1053301368}
   m_Layer: 0
   m_Name: Wall (1)
   m_TagString: Untagged
@@ -9656,6 +9657,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053301363}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1053301368
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053301363}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1089365311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17577,6 +17598,10 @@ PlayableDirector:
     value: {fileID: 638530250}
   - key: {fileID: 4947843042701862164, guid: 75246af2d25ce4243afd79eee521c7a4, type: 2}
     value: {fileID: 834448931}
+  - key: {fileID: 1697695762148906973, guid: 75246af2d25ce4243afd79eee521c7a4, type: 2}
+    value: {fileID: 1283283178}
+  - key: {fileID: 428870733081358490, guid: 75246af2d25ce4243afd79eee521c7a4, type: 2}
+    value: {fileID: 1053301368}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &2113524332
