@@ -28,4 +28,12 @@ public class Desactivar_box_collider : MonoBehaviour
         Murloc.GetComponent<BoxCollider>().enabled = false;
         Armadura.GetComponent<BoxCollider>().enabled = false;
     }
+    public void TurnOn_All_Colliders()
+    {
+        Faun.GetComponent<BoxCollider>().enabled = true;
+        Faun.GetComponent<BoxCollider>().enabled = true;
+        Robot.GetComponent<BoxCollider>().enabled = true;
+        Murloc.GetComponent<BoxCollider>().enabled = true;
+        Armadura.GetComponent<BoxCollider>().enabled = true;
+    }
 }
