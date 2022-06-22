@@ -29,9 +29,23 @@ public class Changescenefrommenu : MonoBehaviour
         
     }
 
+    public void changemapwaiting()
+    {
+        StartCoroutine(whait5seconds());
+
+    }
+
     public void exitgame()
     {
         Debug.Log("Quited game");
         Application.Quit();
     }
+
+    IEnumerator whait5seconds()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("Escena Detective");
+        Started_timeline = true;
+    }
 }
+
