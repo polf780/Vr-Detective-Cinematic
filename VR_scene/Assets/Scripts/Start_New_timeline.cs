@@ -7,6 +7,7 @@ public class Start_New_timeline : MonoBehaviour
     public PlayableDirector playableDirector2;
     public PlayableDirector playabledirector_salir_idle;
     public GameObject button;
+    public bool isrobotiinIdle = false;
     // Start is called before the first frame update
     public bool Started_timeline = false;
     // Start is called before the first frame update
@@ -19,14 +20,20 @@ public class Start_New_timeline : MonoBehaviour
     
     }
 
+    public void RobotInIdle()
+    {
+        isrobotiinIdle = true;
+    }
     public void Play()
     {
-        
-        if (Started_timeline == false)
+        if (isrobotiinIdle == true)
         {
-            playabledirector_salir_idle.Stop();
-            playableDirector2.Play();
-            Started_timeline = true;
+            if (Started_timeline == false)
+            {
+                playabledirector_salir_idle.Stop();
+                playableDirector2.Play();
+                Started_timeline = true;
+            } 
         }
     }
     public void create_button()

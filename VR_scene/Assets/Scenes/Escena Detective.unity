@@ -1524,6 +1524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 206809545}
   - component: {fileID: 206809544}
+  - component: {fileID: 206809546}
   m_Layer: 0
   m_Name: TimeLine_Idle_Robot
   m_TagString: Untagged
@@ -1565,6 +1566,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &206809546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206809543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: a086cbe157a3f3745b65ca5a166343b7, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1472802305}
+          m_TargetAssemblyTypeName: Start_New_timeline, Assembly-CSharp
+          m_MethodName: RobotInIdle
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &213487763
 GameObject:
   m_ObjectHideFlags: 0
@@ -13466,6 +13497,7 @@ MonoBehaviour:
   fadeOnStart: 1
   fadeDuration: 4
   fadeColor: {r: 0, g: 0, b: 0, a: 0}
+  fadeInOnce: 0
 --- !u!1001 &1281268334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15897,6 +15929,7 @@ MonoBehaviour:
   playableDirector2: {fileID: 947292162}
   playabledirector_salir_idle: {fileID: 206809544}
   button: {fileID: 1472802302}
+  isrobotiinIdle: 0
   Started_timeline: 0
 --- !u!1 &1474871952
 GameObject:
